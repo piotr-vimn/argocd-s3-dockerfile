@@ -12,8 +12,8 @@ RUN apt-get update && \
 USER 999
 
 # Install helm-s3 tool
-ARG GCS_PLUGIN_VERSION="0.3.5"
-ARG GCS_PLUGIN_REPO="https://github.com/hayorov/helm-gcs.git"
+ARG GCS_PLUGIN_VERSION="0.10.0"
+ARG GCS_PLUGIN_REPO="https://github.com/hypnoglow/helm-s3.git"
 
 RUN helm plugin install ${GCS_PLUGIN_REPO} --version ${GCS_PLUGIN_VERSION}
 
